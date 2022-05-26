@@ -1,4 +1,6 @@
-﻿namespace testapi.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace testapi.Models
 {
     public class Character
     {
@@ -8,8 +10,8 @@
         public int Strength { get; set; } = 10;
         public int Defense { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
-
         public RgpClass Class { get; set; } = RgpClass.Knight;
+        public User User { get; set; }
 
     }
 }
